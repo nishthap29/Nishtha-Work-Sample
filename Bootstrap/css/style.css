@@ -1,0 +1,27 @@
+body{
+	margin-top: 70px;
+}
+.fbox{
+	text-align: center;
+}
+.fbox span{
+	font-size: 50px;
+}
+.glyphicon-tree-conifer{
+	color: darkgreen;
+}
+.glyphicon-heart{
+	color: red;
+}
+.glyphicon-fire{
+	color: darkorange;
+}
+.jumbotron{
+	text-align: center;
+}
+.footer{
+	text-align: center;
+}
+.glyphicon-leaf{
+	text-align: center;
+}
