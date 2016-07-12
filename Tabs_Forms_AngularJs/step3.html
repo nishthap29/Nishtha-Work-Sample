@@ -1,0 +1,28 @@
+<h1>Step 3</h1>
+
+<div ng-controller="myController">
+<table class="table table-bordered">
+  <tr>
+  	<td>First Name</td>
+  	<td>Last Name</td>
+  	<td>Email</td>
+  	<td>Phone</td>
+  	<td>State</td>
+  	<td>Departure</td>
+	<td>Return</td>
+  </tr>
+  <tr>
+  	<td>{{details.first}}</td>
+  	<td>{{details.last}}</td>
+  	<td>{{details.email}}</td>
+  	<td>{{details.phone}}</td>
+  	<td>{{details1.state}}</td>
+  	<td>{{details1.ddate}}</td>
+  	<td>{{details1.rdate}}</td>
+  </tr>
+</table>
+<button ui-sref="step1" class="btn btn-lg btn-primary btn-block" type="submit">Back To Step 1
+</button>
+
+</div>
+

@@ -1,0 +1,18 @@
+.panel-danger, .panel-warning{
+	width: 70%;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+.container{
+	margin: 20px;
+}
+a{
+cursor: pointer;
+}
+
+.has_error{
+	border: 1px solid red !important;
+}
+.error_text{
+	color: red;
+}

@@ -1,0 +1,38 @@
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Information Form</h3>
+  </div>
+  <div class="panel-body" ng-controller="myController">
+    <form class="form-signin" name="myForm2">
+      
+      <select class="form-control" ng-model="steps.state" name="select" required>
+        <option disabled>Select State</option>
+      	<option ng-repeat="option in optionData" >{{option.name}}</option>
+      </select>
+      <br>
+
+      <!-- <input type="date" class="form-control" placeholder="Date Departure" 
+        ng-model="steps.ddate" name="ddate" lower-than="{{steps.rdate}}" required><br>
+      
+      <p class="error_text" ng-show="myForm2.ddate.$error.lower-than">
+        Departure Date must minimum than Return Date
+      </p> -->
+
+      <p class="input-group" ng-controller="DatepickerPopupDemoCtrl">
+          <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" 
+            is-open="popup1.opened" ng-model="steps.ddate" name="ddate" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+ 	    
+      <input type="date"  class="form-control" placeholder="Date Return" 
+        ng-model="steps.rdate" name="rdate" required><br>
+
+      <button ui-sref="step3" class="btn btn-lg btn-primary btn-block" type="submit" 
+        ng-disabled="myForm2.$invalid" ng-click="saveDataTwo(steps)">Next
+      </button>
+
+   </form>
+  </div>
+</div>

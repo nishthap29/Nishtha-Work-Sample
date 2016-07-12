@@ -1,0 +1,42 @@
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Information Form</h3>
+  </div>
+  <div class="panel-body" ng-controller="myController">
+    <form class="form-signin" name="myForm">
+      
+      <input type="text"  name="first" class="form-control" placeholder="First Name" autofocus="" 
+        ng-model="step.first"  ng-minlength="4" ng-maxlength="8" 
+          ng-class="{'has_error' : myForm.first.$dirty && myForm.first.$invalid}" required><br>
+
+      <p ng-show="myForm.first.$error.minlength" class="error_text">First Name is too short</p>
+      <p ng-show="myForm.first.$error.maxlength" class="error_text">First Name is too long</p>
+
+ 	    <input type="text"  name="last" class="form-control" placeholder="Last Name" autofocus="" 
+        ng-class="{'has_error' : myForm.last.$dirty && myForm.last.$invalid}"
+        ng-model="step.last" ng-minlength="4" ng-maxlength="8"required><br>
+
+      <p ng-show="myForm.last.$error.minlength" class="error_text">Last Name is too short</p>
+      <p ng-show="myForm.last.$error.maxlength" class="error_text">Last Name is too long</p>
+
+  	  
+  	  <input type="email"  name="email" class="form-control" ng-model="step.email" placeholder="Email address" 
+        ng-class="{'has_error' : myForm.email.$invalid && !myForm.email.$pristine}"
+          autofocus="" required><br>
+  	  
+      <p ng-show="myForm.email.$invalid && !myForm.email.$pristine" class="error_text">email is invalid</p>
+
+	    <input type="phone"  name="phone" class="form-control" ng-model="step.phone" 
+        ng-class="{'has_error' : myForm.email.$pattern}"
+          placeholder="+1 732-786-7258" ng-pattern="phoneNumber"  autofocus="" required>
+      <br>
+
+      <p class="error_text" ng-show="myForm.phone.$error.pattern">Please enter valid phone Number</p>
+
+      <button ui-sref="step2" class="btn btn-lg btn-primary btn-block" type="submit" 
+        ng-click="saveDataOne(step)" ng-disabled="myForm.$invalid">Next
+      </button>
+
+   </form>
+  </div>
+</div>
