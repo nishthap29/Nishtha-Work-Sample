@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+  </head>
+
+  <body ng-app="myApp">
+    <div class="container" ng-controller="myController">
+		<div class="panel panel-success">
+		  <div class="panel-heading">
+			<div class="form-group">
+			    <div class="input-group">
+  					<input type="text" class="form-control" ng-model="gender">
+  					<span class="input-group-addon" ng-click="search()">Search</span>
+  					<span class="input-group-addon" ng-click="clear()">Clear</span>
+				</div>
+			</div>
+		  </div>
+
+	  	  <div class="panel-body" ng-show="SearchQuery">
+	    		<div ng-repeat="person in myData | filter:SearchQuery">
+	    			<div class="thumbnail" ng-class="(person.gender == 'F')? 'pink':'blue'">
+	    				<h4><span>Name:</span> {{person.name}}</h4>
+	    				<span>Gender:</span> {{person.gender}}<br>
+	    				<span>City:</span> {{person.city}}<br>
+	    			</div>
+	    		</div>
+	  		</div>
+	  		<div class="alert alert-warning" role="alert">
+  				<span ng-hide="SearchQuery" class="alert-link">Please Search the data</span>
+			</div>
+	  		
+	    </div>
+    </div>
+  </body>
+
+</html>
