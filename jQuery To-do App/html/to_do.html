@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>My To-do App</title>
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap.css">
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="..\css\style.css">
+<script type="text/javascript" src="..\js\jquery.js"></script>
+
+</head>
+
+<body>
+
+<div id="head-div">
+	<div id="h2-div">
+		<h2>My To-do App</h2>
+	</div>
+
+	
+	<div id="myform">
+		<div id="text-div">
+			<input class="input-medium search-query box-shadow" id="mytxtbox" placeholder="  What you want to do?" name="nm">
+		</div>
+		<p id="p1">Hello</p>
+		
+		<div class="main-div">
+
+			<div class="btn-div">
+				<ol>
+					<li><button class="btn btn-primary" id="all"> All </button></li>
+					<li><button class="btn btn-success" id="completed">Completed</button></li>
+					<li><button class="btn btn-warning" id="pending">Pending</button></li>
+				</ol>
+			</div>
+
+			<div id="chk-div">
+				<div class="checkbox">
+					<div class="bottom">
+						<input type="checkbox" id="sAll">
+						<span>Select/deselect All</span>
+					</div>
+					<div class="bottom">
+						<input type="checkbox" class="chk">
+						<span>Take care of garden</span>
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</div>
+					<div class="bottom">
+						<input type="checkbox" class="chk">
+						<span>Get a good job</span>
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</div>
+					<div class="bottom">
+						<input type="checkbox" class="chk">
+						<span>Go to gym</span>
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</div>
+					<div class="bottom">
+						<input type="checkbox" class="chk">
+						<span>Improve my programming skills</span>
+						<span class="glyphicon glyphicon-remove-circle"></span>
+					</div>
+				</div>
+	
+				<div class="com_btn">
+					<button class="btn btn-primary" id="removeBtn">Remove completed</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="..\js\script.js"></script>
+
+</body>
+</html>

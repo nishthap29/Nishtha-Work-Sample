@@ -1,0 +1,84 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 800px;
+}
+h2{
+text-shadow: 2px 2px skyblue;
+color: darkgreen;
+}
+.mydiv{
+	margin: 10px;
+}
+.box-shadow{
+	height: 30px;
+	width: 300px;
+	border-radius: 7px;
+}
+div{
+	margin: 20px;
+}
+#head-div{
+	width: 500px;
+}
+.form-div{
+	width: 100px;
+}
+#h2-div{
+	padding-left: 40px;
+	width: 230px;
+}
+#text-div{
+	padding-bottom: 25px;
+	border-bottom: solid 5px #001244;
+}
+#myform{
+	width: 370px;
+}
+.btn-div{
+	text-align: center;
+	margin: 10px;
+	height: 30px;
+	padding-top: 15px;
+}
+ol{
+	list-style: none;
+}
+ol li{
+	float: left;
+	padding-left: 15px;
+}
+.chk-div{
+	margin-top: 35px;
+}
+.bottom{
+	border-bottom: dotted 1px gray;
+	height: 30px;
+	padding-left: 23px;
+}
+.com_btn{
+	float: right;
+	padding-right: 20px;
+}
+.main-div{
+	width: 400px;
+	margin-left: -20px;
+}
+.chk-div:hover > .bottom
+p{
+	padding-left: 30px;
+}
+
+.checkbox
+{
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.glyphicon-remove-circle{
+	float: right;
+}
+
+.glyphicon-remove-circle:hover{
+	cursor: pointer;
+	color: red;
+}
